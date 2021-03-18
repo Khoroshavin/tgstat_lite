@@ -8,6 +8,22 @@ body {
   background-color: #F5F9FC;
 }
 
+/* .header {
+  background: url(../img/icons/header_plans_black.png) no-repeat;
+} */
+
+.logo__wrapper {
+  background: url(../img/icons/logo_white.png) no-repeat;
+}
+
+.theme__btn {
+  background: url(../img/icons/sun_dark.png) no-repeat;
+}
+
+.theme__btn::after {
+  content: url(../img/icons/triangle_black.png) no-repeat;
+}
+
 .card__btn {
   color: #000;
 }

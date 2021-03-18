@@ -1,6 +1,7 @@
 /* variables */
 :root{
-  
+  --white_clr: #EEEFDE;
+  --white_active: #DFE587
 }
 /* /variables */
 
@@ -8,19 +9,64 @@ body {
   background-color: #141414;
 }
 
+/* .header {
+  background: url(../img/icons/header_plans_black.png) no-repeat;
+} */
+
+.logo__wrapper {
+  background: url(../img/icons/logo_black.png) no-repeat;
+}
+
+.theme__btn {
+  background: url(../img/icons/moon_white.png) no-repeat;
+}
+
+.theme__btn::after {
+  content: url(../img/icons/triangle_white.png);
+}
+
 /* tabs */
 .tab {
-  color: #EEEFDE;
+  color: var(--white_clr);
+}
+
+.top__title {
+  color: var(--white_clr);
+}
+
+.sort__btn {
+  color: var(--white_clr)
 }
 /* / tabs */
 
+.select__chanels {
+  background-color: var(--white_clr);
+  color: #141414;
+}
+
 /* card */
+.card__title {
+  color: var(--white_clr)
+}
+
+.card__desc {
+  color: var(--white_clr)
+}
+
 .card__btn {
-  color: #EEEFDE;
+  color: var(--white_clr);
 }
 /* / card */
 
 
+.chan__cats_btn {
+  background-color: var(--white_clr);
+}
+
 .chanels__category .active {
-  background-color: #DFE587;
+  background-color: var(--white_active);
+}
+
+.category__btn  {
+  color: var(--white_clr);
 }

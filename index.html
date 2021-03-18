@@ -47,16 +47,22 @@
 
   <!-- основные стили -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- светлая тема -->
-  <link rel="stylesheet" href="css/light_theme.css">
-  <!-- темная тема -->
-  <!-- <link rel="stylesheet" href="css/dark_theme.css"> -->
+  <!-- меняем тему -->
+  <link rel="stylesheet" href="" id="mode"> 
+
+  <script defer src="js/main.js"></script>
 
 </head>
 
 <body>
 
-  <header></header>
+  <header class="header">
+    <div class="header__inner">
+      <div class="logo__wrapper">
+      </div>
+      <button class="theme__btn"></button>
+    </div>
+  </header>
 
   <main>
 
@@ -66,9 +72,9 @@
       <input class="radio" id="two" name="group" type="radio">
       <input class="radio" id="three" name="group" type="radio">
       <div class="tabs">
-        <label class="tab" id="one__tab" for="one">ТОП</label>
-        <label class="tab" id="two__tab" for="two">КАНАЛЫ</label>
-        <label class="tab" id="three__tab" for="three">ЧАТЫ</label>
+        <label class="tab" id="one__tab" for="one" tabindex="1">ТОП</label>
+        <label class="tab" id="two__tab" for="two" tabindex="2">КАНАЛЫ</label>
+        <label class="tab" id="three__tab" for="three" tabindex="3">ЧАТЫ</label>
       </div>
 
       <div class="panels">
@@ -341,7 +347,7 @@
 
   <footer></footer>
 
-<script src="js/main.js"></script>
-</body>
 
+
+</body>
 </html>

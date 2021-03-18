@@ -414,6 +414,40 @@ body {
 
 /* header */
 
+.header {
+  background: url(../img/icons/header_plans_black.png) no-repeat;
+
+  background-position: top -77px left 0px; 
+  height: 300px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+
+.logo__wrapper {
+  min-width: 112px;
+  min-height: 33px;
+  margin-left: 20px;
+}
+
+.theme__btn {
+  margin-right: 35px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.theme__btn::after {
+  content: url(../img/icons/triangle_black.png);
+  position: absolute;
+  right: -12px;
+  top: 6px;
+}
+
 /* /header */
 
 
@@ -434,7 +468,7 @@ body {
 
 .tab {
   cursor: pointer;
-  padding: 0 34px 18px 34px;
+  padding: 1px 34px 18px 34px;
   display: inline-block;
   letter-spacing: 2.2px;
 }
@@ -671,6 +705,10 @@ body {
 
 .chanels__category_opened{
   max-height: 100%;
+}
+
+.chanels__category_close {
+  display: none;
 }
 
 .chanels__category button:not(:last-child) {
