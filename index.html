@@ -148,35 +148,67 @@
         <div class="panel two__panel" id="two__panel">
 
           <div class="chanels__category">
-            <button data-button='news'>Новости и СМИ</button>
-            <button data-button='it' class="active">IT</button>
-            <button data-button='blog'>Блоги</button>
-            <button data-button='humor'>Юмор</button>
-            <button data-button='politics'>Политика и экономика</button>
-            <button data-button='crypto'>Криптовалюты</button>
-            <button data-button='science'>Наука и образование</button>
-            <button data-button='music'>Музыка</button>
-            <button data-button='bussines'>Бизнес и стартапы</button>
-            <button data-button='language'>Лингвистика</button>
-            <button data-button='psyho'>Психология</button>
-            <button data-button='marceting'>Маркетинг и реклама</button>
-            <button data-button='career'>Карьера</button>
-            <button data-button='films'>Фильмы и сериалы</button>
-            <button data-button='books'>Литература</button>
-            <button data-button='games'>Игры</button>
-            <button data-button='travel'>Путешествия</button>
-            <button data-button='art'>Искусство</button>
-            <button data-button='Fashion'>Мода</button>
-            <button data-button='medical'>Медицина</button>
-            <button data-button='eat'>Еда и напитки</button>
-            <button data-button='sell'>Продажи</button>
-            <button data-button='citate'>Цитаты</button>
-            <button data-button='handmade'>Рукоделие</button>
-            <button data-button='adult'>Для взрослых</button>
-            <button data-button='other'>Другое</button>
-            <button data-button='hide_btn' class="category__btn chanels__category_close">Скрыть</button>
+            <button class="chan__cats_btn" data-value='news'>Новости и СМИ</button>
+            <button class="chan__cats_btn" data-value='technology'>IT</button>
+            <button class="chan__cats_btn" data-value='blog'>Блоги</button>
+            <button class="chan__cats_btn" data-value='humor'>Юмор</button>
+            <button class="chan__cats_btn" data-value='politic'>Политика и экономика</button>
+            <button class="chan__cats_btn" data-value='crypto'>Криптовалюты</button>
+            <button class="chan__cats_btn" data-value='science'>Наука и образование</button>
+            <button class="chan__cats_btn" data-value='music'>Музыка</button>
+            <button class="chan__cats_btn" data-value='business'>Бизнес и стартапы</button>
+            <button class="chan__cats_btn" data-value='language'>Лингвистика</button>
+            <button class="chan__cats_btn" data-value='psychology'>Психология</button>
+            <button class="chan__cats_btn" data-value='marketing'>Маркетинг и реклама</button>
+            <button class="chan__cats_btn" data-value='career'>Карьера</button>
+            <button class="chan__cats_btn" data-value='film'>Фильмы и сериалы</button>
+            <button class="chan__cats_btn" data-value='literature'>Литература</button>
+            <button class="chan__cats_btn" data-value='travel'>Путешествия</button>
+            <button class="chan__cats_btn" data-value='art'>Искусство</button>
+            <button class="chan__cats_btn" data-value='fashion'>Мода</button>
+            <button class="chan__cats_btn" data-value='medicine'>Медицина</button>
+            <button class="chan__cats_btn" data-value='food'>Еда и напитки</button>
+            <button class="chan__cats_btn" data-value='sale'>Продажи</button>
+            <button class="chan__cats_btn" data-value='quote'>Цитаты</button>
+            <button class="chan__cats_btn" data-value='sport'>Спорт</button>
+            <button class="chan__cats_btn" data-value='handicraft'>Рукоделие</button>
+            <button class="chan__cats_btn" data-value='adult'>Для взрослых</button>
+            <button class="chan__cats_btn" data-value='other'>Другое</button>
+            <button class="category__btn chanels__category_close">Скрыть</button>
           </div>
           <button class="category__btn chanels__category_open">Все категории</button>
+
+          <div class="select__chanels_wrap">
+            <select class="select__chanels" name="select">
+              <option selected disabled>Все категории</option>
+              <option data-value='news'>Новости и СМИ</option>
+              <option data-value='it'>IT</option>
+              <option data-value='blog'>Блоги</option>
+              <option data-value='humor'>Юмор</option>
+              <option data-value='politics'>Политика и экономика</option>
+              <option data-value='crypto'>Криптовалюты</option>
+              <option data-value='science'>Наука и образование</option>
+              <option data-value='music'>Музыка</option>
+              <option data-value='bussines'>Бизнес и стартапы</option>
+              <option data-value='language'>Лингвистика</option>
+              <option data-value='psyho'>Психология</option>
+              <option data-value='marceting'>Маркетинг и реклама</option>
+              <option data-value='career'>Карьера</option>
+              <option data-value='films'>Фильмы и сериалы</option>
+              <option data-value='books'>Литература</option>
+              <option data-value='games'>Игры</option>
+              <option data-value='travel'>Путешествия</option>
+              <option data-value='art'>Искусство</option>
+              <option data-value='Fashion'>Мода</option>
+              <option data-value='medical'>Медицина</option>
+              <option data-value='eat'>Еда и напитки</option>
+              <option data-value='sell'>Продажи</option>
+              <option data-value='citate'>Цитаты</option>
+              <option data-value='handmade'>Рукоделие</option>
+              <option data-value='adult'>Для взрослых</option>
+              <option data-value='other'>Другое</option>
+            </select>
+          </div>
 
           <div class="sorting">
             <button class="chanels_pop_sort sort__btn active">По популярности</button>
@@ -299,152 +331,6 @@
 
 
         <div class="panel three__panel" id="three__panel">
-
-          <!-- <div class="chanels__category">
-            <button>Новости и СМИ</button>
-            <button class="active">IT</button>
-            <button>Блоги</button>
-            <button>Юмор</button>
-            <button>Политика и экономика</button>
-            <button>Криптовалюты</button>
-            <button>Наука и образование</button>
-            <button>Музыка</button>
-            <button>Бизнес и стартапы</button>
-            <button>Лингвистика</button>
-            <button>Психология</button>
-            <button>Маркетинг и реклама</button>
-            <button>Карьера</button>
-            <button>Фильмы и сериалы</button>
-            <button>Литература</button>
-            <button>Игры</button>
-            <button>Путешествия</button>
-            <button>Искусство</button>
-            <button>Мода</button>
-            <button>Медицина</button>
-            <button>Еда и напитки</button>
-            <button>Продажи</button>
-            <button>Цитаты</button>
-            <button>Рукоделие</button>
-            <button>Для взрослых</button>
-            <button>Другое</button>
-          </div>
-
-          <div class="sorting">
-            <button class="chanels_pop_sort sort__btn active">По популярности</button>
-            <button class="chanels_abc_sort sort__btn">По алфавиту</button>
-          </div>
-
-          <div class="chanels__wrapper">
-
-            <article class="tg__card">
-              <div class="card__header_wrapper">
-                <div class="card__header">
-                  <div class="img__wrapper">
-                    <img src="img/icons/card__icon.png" alt="Терабит: it технологии">
-                  </div>
-                  <div class="card__info">
-                    <h3 class="card__title">Терабит: it технологии</h3>
-                    <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
-                  </div>
-                </div>
-                <a href="#" class="card__btn card__btn_top">Подписаться</a>
-              </div>
-              <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
-                и новости интернета.</p>
-              <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
-            </article>
-
-            <article class="tg__card">
-              <div class="card__header_wrapper">
-                <div class="card__header">
-                  <div class="img__wrapper">
-                    <img src="img/icons/card__icon.png" alt="Терабит: it технологии">
-                  </div>
-                  <div class="card__info">
-                    <h3 class="card__title">Терабит: it технологии</h3>
-                    <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
-                  </div>
-                </div>
-                <a href="#" class="card__btn card__btn_top">Подписаться</a>
-              </div>
-              <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
-                и новости интернета.</p>
-              <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
-            </article>
-
-            <article class="tg__card">
-              <div class="card__header_wrapper">
-                <div class="card__header">
-                  <div class="img__wrapper">
-                    <img src="img/icons/card__icon.png" alt="Терабит: it технологии">
-                  </div>
-                  <div class="card__info">
-                    <h3 class="card__title">Терабит: it технологии</h3>
-                    <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
-                  </div>
-                </div>
-                <a href="#" class="card__btn card__btn_top">Подписаться</a>
-              </div>
-              <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
-                и новости интернета.</p>
-              <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
-            </article>
-
-            <article class="tg__card">
-              <div class="card__header_wrapper">
-                <div class="card__header">
-                  <div class="img__wrapper">
-                    <img src="img/icons/card__icon.png" alt="Терабит: it технологии">
-                  </div>
-                  <div class="card__info">
-                    <h3 class="card__title">Терабит: it технологии</h3>
-                    <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
-                  </div>
-                </div>
-                <a href="#" class="card__btn card__btn_top">Подписаться</a>
-              </div>
-              <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
-                и новости интернета.</p>
-              <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
-            </article>
-
-            <article class="tg__card">
-              <div class="card__header_wrapper">
-                <div class="card__header">
-                  <div class="img__wrapper">
-                    <img src="img/icons/card__icon.png" alt="Терабит: it технологии">
-                  </div>
-                  <div class="card__info">
-                    <h3 class="card__title">Терабит: it технологии</h3>
-                    <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
-                  </div>
-                </div>
-                <a href="#" class="card__btn card__btn_top">Подписаться</a>
-              </div>
-              <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
-                и новости интернета.</p>
-              <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
-            </article>
-
-            <article class="tg__card">
-              <div class="card__header_wrapper">
-                <div class="card__header">
-                  <div class="img__wrapper">
-                    <img src="img/icons/card__icon.png" alt="Терабит: it технологии">
-                  </div>
-                  <div class="card__info">
-                    <h3 class="card__title">Терабит: it технологии</h3>
-                    <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
-                  </div>
-                </div>
-                <a href="#" class="card__btn card__btn_top">Подписаться</a>
-              </div>
-              <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
-                и новости интернета.</p>
-              <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
-            </article>
-
-          </div> -->
         </div>
 
       </div>
@@ -455,7 +341,7 @@
 
   <footer></footer>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

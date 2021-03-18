@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Lucida Grande";
-	src: url("fonts/lucida-grande/lucida-grande.woff2"),
-	url("fonts/lucida-grande/lucida-grande.woff2") format("woff2");
+	src: url("../css/fonts/lucida-grande.woff2"),
+	url("../css/fonts/lucida-grande/lucida-grande.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
   font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
 	font-family: "Lucida Grande Bold";
-	src: url("fonts/lucida-grande-bold/lucida-grande-bold.woff2"),
-		url("fonts/lucida-grande-bold/lucida-grande-bold.woff2") format("woff2");
+	src: url("../css/fonts/lucida-grande-bold/lucida-grande-bold.woff2"),
+		url("../css/fonts/lucida-grande-bold/lucida-grande-bold.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
   font-display: swap;
@@ -46,6 +46,7 @@ html {
 
 * {
   box-sizing: border-box;
+  outline-color: var(--clr_btn_border);
 }
 
 body {
@@ -647,6 +648,10 @@ body {
 
 
 /* TAB CHANELS */
+.two__panel {
+  padding-top: 44px;
+}
+
 .two__panel .sorting {
   margin-top: 27px;
 }
@@ -658,7 +663,7 @@ body {
 }
 
 .chanels__category {
-  margin-top: 44px;
+  /* margin-top: 44px; */
   margin-left: -14px;
   max-height: 52px;
   overflow: hidden;
@@ -686,6 +691,34 @@ body {
 
 .category_close {
   margin-left: 25px;
+}
+
+
+/* SELECT */
+.select__chanels {
+  width: 300px;
+  display: flex;
+  margin: 0 auto;
+  height: 55px;
+  text-align-last: center;
+  border: 1px solid var(--clr_gray);
+  border-radius: 10px;
+  font-size: 16px;
+  /* font-weight: 700; */
+}
+.select__chanels option {
+  display: flex;
+  padding: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+/* / SELECT */
+
+
+@media only screen and (max-width: 768px) {
+  .chanels__category, .category__btn {
+    display: none !important;
+  }
 }
 
 /* / TAB CHANELS */
