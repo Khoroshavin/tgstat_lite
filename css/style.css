@@ -647,6 +647,10 @@ body {
 
 
 /* TAB CHANELS */
+.two__panel .sorting {
+  margin-top: 27px;
+}
+
 .chanels__wrapper {
   display: flex;
   justify-content: space-between;
@@ -656,10 +660,15 @@ body {
 .chanels__category {
   margin-top: 44px;
   margin-left: -14px;
-  margin-bottom: 29px;
+  max-height: 52px;
+  overflow: hidden;
 }
 
-.chanels__category button {
+.chanels__category_opened{
+  max-height: 100%;
+}
+
+.chanels__category button:not(:last-child) {
   margin: 7px 14px;
   font-size: 18px;
   padding: 9px 22px;
@@ -668,5 +677,22 @@ body {
   border-radius: 5px;
 }
 
+.category__btn {
+  padding: 0;
+  margin-top: 13px;
+  font-size: 18px;
+  text-decoration: underline;
+}
 
-/* TAB CHANELS */
+.category_close {
+  margin-left: 25px;
+}
+
+/* / TAB CHANELS */
+
+
+/* TAB CHATS*/
+.three__panel .sorting {
+  margin-top: 27px;
+}
+/* / TAB CHATS*/
