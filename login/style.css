@@ -3,7 +3,6 @@
   --input-padding-y: .75rem;
   --clr_gray: #9A9A9A;
   --clr_btn_border: #1285A3;
-  --clr_btn_border_hov: #159dbf;
 }
 
 
@@ -108,13 +107,19 @@ body {
 }
 
 .btn_signin {
-  background-color: var(--clr_btn_border);
-  border: 0;
+  color: var(--clr_btn_border);
+  background-color: transparent;
+  border: 1px solid var(--clr_btn_border);
 }
 .btn_signin:hover {
-  background-color: var(--clr_btn_border_hov);
+  background-color: var(--clr_btn_border);
 }
 
+.btn_wrapper {
+  margin: 0 auto;
+  max-width: 150px;
+  margin-top: 30px !important;
+}
 
 /* Fallback for Edge
 -------------------------------------------------- */
