@@ -1,0 +1,26 @@
+/* variables */
+:root{
+  
+}
+/* /variables */
+
+body {
+  background-color: #141414;
+}
+
+/* tabs */
+.tab {
+  color: #EEEFDE;
+}
+/* / tabs */
+
+/* card */
+.card__btn {
+  color: #EEEFDE;
+}
+/* / card */
+
+
+.chanels__category .active {
+  background-color: #DFE587;
+}

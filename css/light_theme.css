@@ -1,0 +1,17 @@
+/* variables */
+:root{
+  
+}
+/* /variables */
+
+body {
+  background-color: #F5F9FC;
+}
+
+.card__btn {
+  color: #000;
+}
+
+.chanels__category .active {
+  background-color: #fff;
+}

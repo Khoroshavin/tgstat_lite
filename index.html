@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>название</title>
+  <meta name="description" content="описание до 150 символов">
+  <meta name="robots" content="index,follow,noodp">
+
+  <!-- Для IE 10 и ниже файл favicon.ico в корне вашего сайта -->
+  <!-- Для IE 11, Chrome, Firefox, Safari, Opera -->
+  <link rel="icon" href="img/favicons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-62.png" sizes="62x62" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-192.png" sizes="192x192" type="image/png">
+
+  <!-- Open Graph: http://ogp.me/ -->
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Site Name">
+  <meta property="og:title" content="Content Title">
+  <meta property="og:description" content="Description Here">
+  <meta property="og:image" content="https://example.com/img/og/og.png">
+  <meta property="og:image:width" content="968">
+  <meta property="og:image:height" content="504">
+  <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
+
+  <!-- Цвет темы  -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- WP -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <!-- Яндекс.Браузер -->
+  <meta name="viewport" content="ya-title=#000,ya-dock=fade" />
+
+  <!-- темная тема только для мобильных браузеров  -->
+  <meta name="theme-color" content="black">
+  <meta name="msapplication-navbutton-color" content="black">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- основные стили -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- светлая тема -->
+  <link rel="stylesheet" href="css/light_theme.css">
+  <!-- темная тема -->
+  <!-- <link rel="stylesheet" href="css/dark_theme.css"> -->
+
+</head>
+
+<body>
+
+<header></header>
+
+<main>
+
+  <section class="tabs__wrapper">
+
+    <input class="radio" id="one" name="group" type="radio" checked>
+    <input class="radio" id="two" name="group" type="radio">
+    <input class="radio" id="three" name="group" type="radio">
+    <div class="tabs">
+          <label class="tab" id="one__tab" for="one">ТОП</label>
+          <label class="tab" id="two__tab" for="two">КАНАЛЫ</label>
+          <label class="tab" id="three__tab" for="three">ЧАТЫ</label>
+    </div>
+
+    <div class="panels">
+      
+      <div class="panel" id="one__panel">
+            <div class="tops">
+
+              <div class="top__chanels">
+                <h2 class="top__title">Топ каналов</h2>
+                <div class="sorting">
+                  <button class="top__chanels_pop_sort sort__btn active">По популярности</button>
+                  <button class="top__chanels_abc_sort sort__btn">По алфавиту</button>
+                </div>
+
+                <div class="top__chanels_inner">
+
+
+                  <article class="tg__card">
+                    <div class="card__header_wrapper">
+                      <div class="card__header">
+                        <div class="img__wrapper">
+                          <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                        </div>
+                        <div class="card__info">
+                          <h3 class="card__title">Терабит: it технологии</h3>
+                          <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                        </div>
+                      </div>
+                      <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                    </div>
+                    <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                      и новости интернета.</p>
+                    <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+                  </article>
+
+
+                </div>
+
+              </div>
+
+              <div class="top__chats">
+                <h2 class="top__title">Топ чатов</h2>
+                <div class="sorting">
+                  <button class="top__chats_pop_sort sort__btn active">По популярности</button>
+                  <button class="top__chats_abc_sort sort__btn">По алфавиту</button>
+                </div>
+
+                <div class="top__chats_inner">
+
+
+                  <article class="tg__card">
+                    <div class="card__header_wrapper">
+                      <div class="card__header">
+                        <div class="img__wrapper">
+                          <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                        </div>
+                        <div class="card__info">
+                          <h3 class="card__title">Терабит: it технологии</h3>
+                          <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                        </div>
+                      </div>
+                      <a href="#" class="card__btn card__btn_top">Войти</a>
+                    </div>
+                    <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                      и новости интернета.</p>
+                    <a href="#" class="card__btn card__btn_bottom">Войти</a>
+                  </article>
+
+
+                </div>
+              </div>
+
+            </div>
+      </div>
+
+
+      <div class="panel" id="two__panel">
+            
+            <div class="chanels__category">
+              <button>Новости и СМИ</button>
+              <button class="active">IT</button>
+              <button>Блоги</button>
+              <button>Юмор</button>
+              <button>Политика и экономика</button>
+              <button>Криптовалюты</button>
+              <button>Наука и образование</button>
+              <button>Музыка</button>
+              <button>Бизнес и стартапы</button>
+              <button>Лингвистика</button>
+              <button>Психология</button>
+              <button>Маркетинг и реклама</button>
+              <button>Карьера</button>
+              <button>Фильмы и сериалы</button>
+              <button>Литература</button>
+              <button>Игры</button>
+              <button>Путешествия</button>
+              <button>Искусство</button>
+              <button>Мода</button>
+              <button>Медицина</button>
+              <button>Еда и напитки</button>
+              <button>Продажи</button>
+              <button>Цитаты</button>
+              <button>Рукоделие</button>
+              <button>Для взрослых</button>
+              <button>Другое</button>
+            </div>
+
+            <div class="sorting">
+              <button class="chanels_pop_sort sort__btn active">По популярности</button>
+              <button class="chanels_abc_sort sort__btn">По алфавиту</button>
+            </div>
+
+            <div class="chanels__wrapper">
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+            </div>            
+
+      </div>
+
+
+      <div class="panel" id="three__panel">
+            
+            <div class="chanels__category">
+              <button>Новости и СМИ</button>
+              <button class="active">IT</button>
+              <button>Блоги</button>
+              <button>Юмор</button>
+              <button>Политика и экономика</button>
+              <button>Криптовалюты</button>
+              <button>Наука и образование</button>
+              <button>Музыка</button>
+              <button>Бизнес и стартапы</button>
+              <button>Лингвистика</button>
+              <button>Психология</button>
+              <button>Маркетинг и реклама</button>
+              <button>Карьера</button>
+              <button>Фильмы и сериалы</button>
+              <button>Литература</button>
+              <button>Игры</button>
+              <button>Путешествия</button>
+              <button>Искусство</button>
+              <button>Мода</button>
+              <button>Медицина</button>
+              <button>Еда и напитки</button>
+              <button>Продажи</button>
+              <button>Цитаты</button>
+              <button>Рукоделие</button>
+              <button>Для взрослых</button>
+              <button>Другое</button>
+            </div>
+
+            <div class="sorting">
+              <button class="chanels_pop_sort sort__btn active">По популярности</button>
+              <button class="chanels_abc_sort sort__btn">По алфавиту</button>
+            </div>
+
+            <div class="chanels__wrapper">
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+              <article class="tg__card">
+                <div class="card__header_wrapper">
+                  <div class="card__header">
+                    <div class="img__wrapper">
+                      <img src="/img/icons/card__icon.png" alt="Терабит: it технологии">
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">Терабит: it технологии</h3>
+                      <span class="card__followers">112,954</span><span class="card__login">@tbite</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn card__btn_top">Подписаться</a>
+                </div>
+                <p class="card__desc">IT, технологии, информационная безопасность, приватность, секреты
+                  и новости интернета.</p>
+                <a href="#" class="card__btn card__btn_bottom">Подписаться</a>
+              </article>
+
+            </div>       
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
