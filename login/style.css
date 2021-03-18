@@ -109,6 +109,7 @@ body {
 
 .btn_signin {
   background-color: var(--clr_btn_border);
+  border: 0;
 }
 .btn_signin:hover {
   background-color: var(--clr_btn_border_hov);
