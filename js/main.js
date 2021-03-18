@@ -15,7 +15,6 @@ const checkTheme = () => {
 checkTheme();
 
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
 
   // change theme

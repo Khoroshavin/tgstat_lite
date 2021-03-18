@@ -407,16 +407,10 @@ body {
 /* /variables */
 
 
-/* buttons */
-
-/* /buttons */
-
-
 /* header */
 
 .header {
   background: url(../img/icons/header_plans_black.png) no-repeat;
-
   background-position: top -77px left 0px; 
   height: 300px;
 }
