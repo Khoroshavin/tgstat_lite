@@ -1,3 +1,8 @@
+// meta 
+let themeColor = document.getElementsByTagName('meta')["theme-color"];
+let msapp = document.getElementsByTagName('meta')["msapplication-navbutton-color-color"];
+let appleStausBarStyle = document.getElementsByTagName('meta')["apple-mobile-web-app-status-bar-style"];
+
 const checkTheme = () => {
   const styleMode = document.querySelector('#mode');
   let currTheme = localStorage.getItem('mode');
@@ -5,13 +10,15 @@ const checkTheme = () => {
     localStorage.setItem('mode', 'light');
   }
   else if(currTheme === 'light') {
-    styleMode.setAttribute('href', 'css/light_theme.css')
+    styleMode.setAttribute('href', 'css/light_theme.css');
   }
   else if(currTheme === 'dark') {
-    styleMode.setAttribute('href', 'css/dark_theme.css')
+    styleMode.setAttribute('href', 'css/dark_theme.css');
+    themeColor.content = "#141414";
+    msapp.content = "#141414";
+    appleStausBarStyle.content = "black-translucent";
   }
 };
-
 checkTheme();
 
 
@@ -27,10 +34,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         styleMode.setAttribute('href', 'css/dark_theme.css');
         currMode = 'dark';
         localStorage.setItem('mode', 'dark');
+        themeColor.content = "#141414";
+        msapp.content = "#141414";
+        appleStausBarStyle.content = "black-translucent";
       } else {
         styleMode.setAttribute('href', 'css/light_theme.css');
         currMode = 'light';
         localStorage.setItem('mode', 'light');
+        themeColor.content = "#F5F9FC";
+        msapp.content = "#F5F9FC";
+        appleStausBarStyle.content = "default";
       }
     });
 
@@ -105,7 +118,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
   };
-
 
   // 2 tab chanels sort
   const tabChanelsSort = () => {
