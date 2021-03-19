@@ -22,6 +22,7 @@ body {
   content: url(../img/icons/triangle_white.png);
 }
 
+
 /* tabs */
 .tab {
   color: var(--white_clr);
@@ -34,6 +35,11 @@ body {
 .sort__btn {
   color: var(--white_clr)
 }
+
+.input__results::-webkit-scrollbar-thumb {
+  border: 1px solid #141414;
+}
+
 /* / tabs */
 
 .select__chanels {

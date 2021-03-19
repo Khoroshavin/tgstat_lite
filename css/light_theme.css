@@ -24,6 +24,11 @@ body {
 .input {
 
 }
+
+.input__results::-webkit-scrollbar-thumb {
+  border: 1px solid #fff;
+}
+
 /* / input*/
 
 .card__btn {

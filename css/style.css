@@ -496,6 +496,38 @@ body {
   /* display: none; */
   z-index: 9;
   overflow-y: auto;
+  overflow-x: hidden; 
+}
+
+.input__results::-webkit-scrollbar {
+  width: 10px;
+  overflow: hidden;
+}
+
+.input__results::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-bottom: 42px;
+}
+
+.input__results::-webkit-scrollbar-thumb {
+  background-color: var(--clr_gray);
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.input__results::-webkit-scrollbar-button {
+  display: none;
+}
+
+.input__results::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 35px; 
+}
+
+.input__results::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 35px;
 }
 
 .results__sum{
