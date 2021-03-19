@@ -10,13 +10,11 @@ body {
   background-color: var(--black);
 }
 
-
 .logo_text {
   color: var(--white_clr);
 }
 
-.theme__btn {
-}
+
 
 .detail_fake {
   background-color: var(--black);

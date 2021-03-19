@@ -11,6 +11,7 @@ const checkTheme = () => {
 
   }
   else if(currTheme === 'light') {
+    //включаем светлую тему
     styleMode.setAttribute('href', 'css/light_theme.css');
 
     changeThemeBtn.classList.remove("change_planet_dark");
@@ -69,8 +70,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         triangle.classList.add("triangle_dark");
 
 
-
-
       } else {
         styleMode.setAttribute('href', 'css/light_theme.css');
         currMode = 'light';
@@ -85,6 +84,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         triangle.classList.remove("triangle_dark");
         triangle.classList.add("triangle_light");
+
 
       }
     });
@@ -175,9 +175,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   };
 
-
-
-
+  
 
   changeTheme();
   sortTopChanels(); // 1 tab top chanels sort

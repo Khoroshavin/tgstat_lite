@@ -184,48 +184,48 @@ body {
   display: flex;
   align-items: center;
   margin-right: 35px;
-  width: 43px;
-  height: 30px;
-  width: fit-content; 
+  max-width: 46px;
+  max-height: 34px;
+  width: fit-content;
 }
 
 
-/* */
 #summary:hover + #detail, #detail:hover {
   display: block;
 }
+
  
 #detail {
   display: none;
+  /* padding: 2px; */
+  margin-top: -1px;
   background-color: #fff;
-  width: 43px;
+  width: 46px;
   background-color: transparent;
 }
 
-.detail_fake {
-  height: 10px;
-  width: 43px;
-}
-
 .planet {
-  width: 30px;
-  height: 30px;
-  margin-right: 4px;
+  padding: 2px;
+  width: 32px;
+  height: 32px;
+
 }
 
 .change_planet {
   height: 30px;
-  width: 43px;
+}
+
+.triangle_wrap {
+  /* margin-top: 4px; */
+  /* height: 38px; */
+  height: 30px;
+  padding: 10px 2px 10px 2px;
 }
 
 .triangle {
   width: 10px;
   height: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
-
-
 
 .planet_light {
   background: url(../img/icons/sun_dark.svg) no-repeat;
@@ -268,8 +268,15 @@ body {
 @media only screen and (max-width: 992px) {
   .header {
     background: url(../img/icons/header_plans_black_3.png) no-repeat;
-    background-position: top 0px left 180px; 
-    height: 100px;
+    background-position: top 0px left 380px; 
+    height: 98px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    background-position: top 0px left 220px; 
+    height: 98px;
   }
 }
 
