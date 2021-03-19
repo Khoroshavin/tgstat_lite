@@ -303,10 +303,10 @@ body {
   border: 1px solid var(--clr_gray);
   border-radius: 30px;
   background-color: #fff;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom: 0px;
   position: relative;
+  outline: transparent;
+  /* border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; */
 }
 .input::after{
   position: absolute;
@@ -316,6 +316,15 @@ body {
   top: 0;
   right: 0;
   z-index: 9;
+}
+
+.input:focus ~ .input__results{
+  display: block;
+}
+.input:focus {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0px;
 }
 
 .input::-webkit-search-cancel-button{
@@ -336,6 +345,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden; 
   display: none;
+  /* opacity: 0; */
 }
 
 .input__results::-webkit-scrollbar {
@@ -418,6 +428,7 @@ body {
   padding: 1px 34px 18px 34px;
   display: inline-block;
   letter-spacing: 2.2px;
+  outline: transparent;
 }
 
 .panels {
