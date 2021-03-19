@@ -11,16 +11,15 @@ body {
 }
 
 
-.logo__wrapper {
-  background: url(../img/icons/logo_black.png) no-repeat;
+.logo_text {
+  color: var(--white_clr);
 }
 
 .theme__btn {
-  background: url(../img/icons/moon_white.png) no-repeat;
 }
 
-.theme__btn::after {
-  content: url(../img/icons/triangle_white.png);
+.detail_fake {
+  background-color: var(--black);
 }
 
 

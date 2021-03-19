@@ -1,14 +1,42 @@
 const checkTheme = () => {
   const styleMode = document.querySelector('#mode');
   let currTheme = localStorage.getItem('mode');
+
+  const changeThemeBtn = document.querySelector('.change_planet');
+  const planet = document.querySelector('.planet');
+  const triangle = document.querySelector('.triangle');
+
   if (currTheme === null) {
     localStorage.setItem('mode', 'light');
+
   }
   else if(currTheme === 'light') {
     styleMode.setAttribute('href', 'css/light_theme.css');
+
+    changeThemeBtn.classList.remove("change_planet_dark");
+    changeThemeBtn.classList.add("change_planet_light");
+
+    planet.classList.remove("planet_dark");
+    planet.classList.add("planet_light");
+    changeThemeBtn.classList.remove("planet_dark");
+
+    triangle.classList.remove("triangle_dark");
+    triangle.classList.add("triangle_light");
+
   }
   else if(currTheme === 'dark') {
     styleMode.setAttribute('href', 'css/dark_theme.css');
+
+    changeThemeBtn.classList.remove("change_planet_light");
+    changeThemeBtn.classList.add("change_planet_dark");
+
+    planet.classList.remove("planet_light");
+    planet.classList.add("planet_dark");
+    
+
+    triangle.classList.remove("triangle_light");
+    triangle.classList.add("triangle_dark");
+    
   }
 };
 checkTheme();
@@ -19,17 +47,45 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // change theme
   const changeTheme = () => {
     const styleMode = document.querySelector('#mode');
-    const changeThemeBtn = document.querySelector('.theme__btn');
+    const changeThemeBtn = document.querySelector('.change_planet');
+    const planet = document.querySelector('.planet');
+    const triangle = document.querySelector('.triangle');
+
     let currMode = localStorage.getItem('mode');
     changeThemeBtn.addEventListener('click', () => {
       if (currMode == 'light') {
         styleMode.setAttribute('href', 'css/dark_theme.css');
         currMode = 'dark';
         localStorage.setItem('mode', 'dark');
+
+        changeThemeBtn.classList.remove("change_planet_light");
+        changeThemeBtn.classList.add("change_planet_dark");
+
+        planet.classList.remove("planet_light");
+        planet.classList.add("planet_dark");
+        
+
+        triangle.classList.remove("triangle_light");
+        triangle.classList.add("triangle_dark");
+
+
+
+
       } else {
         styleMode.setAttribute('href', 'css/light_theme.css');
         currMode = 'light';
         localStorage.setItem('mode', 'light');
+
+        changeThemeBtn.classList.remove("change_planet_dark");
+        changeThemeBtn.classList.add("change_planet_light");
+
+        planet.classList.remove("planet_dark");
+        planet.classList.add("planet_light");
+        changeThemeBtn.classList.remove("planet_dark");
+
+        triangle.classList.remove("triangle_dark");
+        triangle.classList.add("triangle_light");
+
       }
     });
 

@@ -160,24 +160,97 @@ body {
 
 
 .logo__wrapper {
-  min-width: 112px;
-  min-height: 33px;
+  /* min-width: 112px; */
+  max-height: 33px;
   margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  max-height: 33px;
+  margin-right: 10px;
+}
+
+.logo_text {
+  /* display: inline-block; */
+  /* line-height: 33px; */
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .theme__btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
   margin-right: 35px;
-  width: 30px;
+  width: 43px;
   height: 30px;
-  position: relative;
+  width: fit-content; 
 }
 
-.theme__btn::after {
-  content: url(../img/icons/triangle_black.png);
-  position: absolute;
-  right: -12px;
-  top: 6px;
+
+/* */
+#summary:hover + #detail, #detail:hover {
+  display: block;
 }
+ 
+#detail {
+  display: none;
+  background-color: #fff;
+  width: 43px;
+  background-color: transparent;
+}
+
+.detail_fake {
+  height: 10px;
+  width: 43px;
+}
+
+.planet {
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+}
+
+.change_planet {
+  height: 30px;
+  width: 43px;
+}
+
+.triangle {
+  width: 10px;
+  height: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
+
+.planet_light {
+  background: url(../img/icons/sun_dark.svg) no-repeat;
+}
+
+.planet_dark {
+  background: url(../img/icons/sun_light.svg) no-repeat;
+}
+
+.triangle_light {
+  background: url(../img/icons/triangle_black.svg) no-repeat;
+}
+
+.triangle_dark {
+  background: url(../img/icons/triangle_white.svg) no-repeat;
+}
+
+.change_planet_light {
+  background: url(../img/icons/moon_dark.svg) no-repeat;
+}
+
+.change_planet_dark {
+  background: url(../img/icons/moon_white.svg) no-repeat;
+}
+
 
 @media only screen and (max-width: 1600px) {
   .header {

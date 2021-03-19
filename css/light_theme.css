@@ -8,16 +8,14 @@ body {
   background-color: #F5F9FC;
 }
 
-.logo__wrapper {
-  background: url(../img/icons/logo_white.png) no-repeat;
+
+.theme__btn .planet {
+  /* width: 30px;
+  height: 30px; */
 }
 
-.theme__btn {
-  background: url(../img/icons/sun_dark.png) no-repeat;
-}
-
-.theme__btn::after {
-  content: url(../img/icons/triangle_black.png) no-repeat;
+.detail_fake {
+  background-color: #F5F9FC;
 }
 
 /* input*/
