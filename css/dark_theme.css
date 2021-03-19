@@ -1,12 +1,13 @@
 /* variables */
 :root{
   --white_clr: #EEEFDE;
-  --white_active: #DFE587
+  --white_active: #DFE587;
+  --black: #141414;
 }
 /* /variables */
 
 body {
-  background-color: #141414;
+  background-color: var(--black);
 }
 
 
@@ -36,15 +37,19 @@ body {
   color: var(--white_clr)
 }
 
+.input__label {
+  color: var(--white_clr);
+}
+
 .input__results::-webkit-scrollbar-thumb {
-  border: 1px solid #141414;
+  border: 1px solid var(--black);
 }
 
 /* / tabs */
 
 .select__chanels {
   background-color: var(--white_clr);
-  color: #141414;
+  color: var(--black);
 }
 
 /* card */
