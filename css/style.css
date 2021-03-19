@@ -145,8 +145,10 @@ body {
 /* header */
 
 .header {
+  max-width: 1920px;
+  margin: 0 auto;
   background: url(../img/icons/header_plans_black.png) no-repeat;
-  background-position: center top -120px; 
+  background-position: top -80px left -100px; 
   height: 209px;
 }
 
@@ -177,17 +179,24 @@ body {
   top: 6px;
 }
 
+@media only screen and (max-width: 1600px) {
+  .header {
+    background-position: top -80px left -220px; 
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
-    background-position: center top -160px; 
+    background-position: top -140px left -440px; 
     height: 150px;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   .header {
-    background-position: center top -150px; 
-    height: 150px;
+    background: url(../img/icons/header_plans_black_3.png) no-repeat;
+    background-position: top 0px left 180px; 
+    height: 100px;
   }
 }
 
