@@ -20,6 +20,12 @@ body {
   content: url(../img/icons/triangle_black.png) no-repeat;
 }
 
+/* input*/
+.input {
+
+}
+/* / input*/
+
 .card__btn {
   color: #000;
 }
