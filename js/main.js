@@ -218,6 +218,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   };
 
+  // 3 tab chats sort
+  const tabChatsSort = () => {
+    const chatsPopSortBtn = document.querySelector('.chats_pop_sort');
+
+    chatsPopSortBtn.addEventListener('click', () => {
+
+    });
+  };
+
   
 
   changeTheme();
@@ -228,4 +237,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   choiceChanelsCategory(); // 2 tab choice chanels category
   choiceChatsCategory(); // 3 tab choice chanels category
   tabChanelsSort(); // 2 tab chanels sort
+  tabChatsSort(); // 3 tab chanels sort
 });
