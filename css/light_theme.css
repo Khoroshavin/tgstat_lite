@@ -29,10 +29,11 @@ body {
   color: #000;
 }
 
-.chanels__category .active {
+.chanels__category .active, 
+.chats__category .active {
   background-color: #fff;
 }
 
-.select__chanels {
+.select__chanels, .select__chats {
   background-color: #fff;
 }

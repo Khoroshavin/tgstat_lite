@@ -139,6 +139,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
   };
 
+  //3 tab show/hide of categories
+  const showHideCats2 = () => {
+    const chatsCategoryOpen = document.querySelector('.chats__category_opened');
+    const chatsCategory = document.querySelector('.chats__category');
+    const chatsCategoryClose = document.querySelector('.chats__category_close');
+    // show cats
+    chatsCategoryOpen.addEventListener('click', () => {
+      chatsCategory.classList.add("chats__category_opened");
+      chatsCategoryOpen.style.display = "none";
+      chatsCategoryClose.style.display = "initial";
+    });
+
+    // hide cats
+    chatsCategoryClose.addEventListener('click', () => {
+      chatsCategory.classList.remove("chats__category_opened");
+      chatsCategoryOpen.style.display = "block";
+      chatsCategoryClose.style.display = "none";
+    })
+  };
+
   // 2 tab choice chanels category
   const choiceChanelsCategory = () => {
 
@@ -161,6 +181,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   };
 
+  // 3 tab choice chanels category
+  const choiceChatsCategory = () => {
+
+    const chatCategoryBtn = document.querySelectorAll('.chat__cats_btn');
+
+    // перебираем массив кнопок категорий каналов
+    for (let i = 0; i < chatCategoryBtn.length; i++) {
+      chatCategoryBtn[i].addEventListener("click", (event) => {
+        // удаление из списка для фильтрации
+        if (chatCategoryBtn[i].classList.contains("active")) {
+          chatCategoryBtn[i].classList.remove("active");
+          console.log(event.currentTarget.getAttribute('data-value'));
+        } else {
+          //добавление в список фильтрации
+          chatCategoryBtn[i].classList.add("active");
+          console.log(event.currentTarget.getAttribute('data-value'));
+        }
+      });
+    }
+
+  };
+
+
   // 2 tab chanels sort
   const tabChanelsSort = () => {
     const chanelsPopSortBtn = document.querySelector('.chanels_pop_sort');
@@ -180,7 +223,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   changeTheme();
   sortTopChanels(); // 1 tab top chanels sort
   sortTopChats(); // 1 tab top chats sort
-  showHideCats(); //2 tab show/hide of categories
+  showHideCats(); //2 tab show/hide of chanels categories
+  showHideCats2(); //3 tab show/hide of chats categories
   choiceChanelsCategory(); // 2 tab choice chanels category
+  choiceChatsCategory(); // 3 tab choice chanels category
   tabChanelsSort(); // 2 tab chanels sort
 });

@@ -44,7 +44,7 @@ body {
 
 /* / tabs */
 
-.select__chanels {
+.select__chanels, .select__chats {
   background-color: var(--white_clr);
   color: var(--black);
 }
@@ -64,13 +64,16 @@ body {
 /* / card */
 
 
-.chan__cats_btn {
+.chan__cats_btn,
+.chat__cats_btn {
   background-color: var(--white_clr);
 }
 
-.chanels__category .active {
+.chanels__category .active,
+.chats__category .active {
   background-color: var(--white_active);
 }
+
 
 .category__btn  {
   color: var(--white_clr);

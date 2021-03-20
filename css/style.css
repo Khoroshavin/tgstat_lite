@@ -666,7 +666,7 @@ body {
 
 
 /* TAB CHANELS */
-.two__panel {
+.two__panel, .three__panel {
   padding-top: 44px;
 }
 
@@ -674,28 +674,27 @@ body {
   margin-top: 27px;
 }
 
-.chanels__wrapper {
+.chanels__wrapper, .chats__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.chanels__category {
-  /* margin-top: 44px; */
+.category {
   margin-left: -14px;
   max-height: 52px;
   overflow: hidden;
 }
 
-.chanels__category_opened{
+.chanels__category_opened, .chats__category_opened{
   max-height: 100%;
 }
 
-.chanels__category_close {
+.chanels__category_close, .chats__category_close {
   display: none;
 }
 
-.chanels__category button:not(:last-child) {
+.category button:not(:last-child) {
   margin: 7px 14px;
   font-size: 18px;
   padding: 9px 22px;
@@ -717,12 +716,12 @@ body {
 
 
 /* SELECT */
-.select__chanels_wrap {
+.select__category {
   max-width: 300px;
   margin: 0 auto;
 }
 
-.select__chanels {
+.select__chanels, .select__chats {
   width: 100%;
   display: flex;
   margin: 0 auto;
@@ -733,7 +732,8 @@ body {
   font-size: 16px;
   /* font-weight: 700; */
 }
-.select__chanels option {
+.select__chanels option,
+.select__chats option {
   display: flex;
   padding: 0 auto;
   text-align: center;
@@ -744,13 +744,13 @@ body {
 
 
 @media only screen and (max-width: 767px) {
-  .chanels__category, .category__btn {
+  .category, .category__btn {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .select__chanels_wrap {
+  .select__category {
     display: none;
   }
 }
