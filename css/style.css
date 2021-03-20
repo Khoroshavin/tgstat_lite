@@ -194,7 +194,6 @@ body {
   display: block;
 }
 
- 
 #detail {
   display: none;
   /* padding: 2px; */
@@ -308,15 +307,7 @@ body {
   /* border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; */
 }
-.input::after{
-  position: absolute;
-  content: url(../img/icons/search__icon.png);
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 0;
-  z-index: 9;
-}
+
 
 .input:focus ~ .input__results{
   display: block;
