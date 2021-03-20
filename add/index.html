@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>New channel/chat</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="../login/style.css">
 </head>
 
@@ -16,17 +19,32 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Добавьте канал/чат</h5>
+            <h1 class="card-title text-center">Добавьте канал/чат</h1>
             <form class="form-signin">
-              <div class="form-label-group">
-                <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">впишите @username</label>
+            
+              <div class="form-label-group mt-4">
+                <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required >
+                <label for="inputEmail">Укажите @username</label>
+              </div>
+              <h5 class="">что добавить?</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="chanel">
+                <label class="form-check-label" for="exampleRadios1">
+                  Канал
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="chat" checked>
+                <label class="form-check-label" for="exampleRadios2">
+                  Чат
+                </label>
               </div>
 
+
+              <!-- выбор категории -->
               <div class="chanels_list form-label-group">
                 <select class="form-select" id="select" aria-label="Default select example">
-                  <option selected disabled>выберите категорию</option>
-                  <option value="1">One</option>
+                  <option selected disabled>Выберите категорию</option>
                   <option value='news'>Новости и СМИ</option>
                   <option value='technology'>IT</option>
                   <option value='blog'>Блоги</option>
@@ -56,6 +74,86 @@
                 </select>
               </div>
 
+              <!-- выбор языка -->
+              <div class="chanels_list form-label-group">
+                <select class="form-select" id="select2" aria-label="Default select example">
+                  <option selected disabled>Выберите язык</option>
+                  <option value="AF">Afrikaans</option>
+                  <option value="SQ">Albanian</option>
+                  <option value="AR">Arabic</option>
+                  <option value="HY">Armenian</option>
+                  <option value="EU">Basque</option>
+                  <option value="BN">Bengali</option>
+                  <option value="BG">Bulgarian</option>
+                  <option value="CA">Catalan</option>
+                  <option value="KM">Cambodian</option>
+                  <option value="ZH">Chinese (Mandarin)</option>
+                  <option value="HR">Croatian</option>
+                  <option value="CS">Czech</option>
+                  <option value="DA">Danish</option>
+                  <option value="NL">Dutch</option>
+                  <option value="EN">English</option>
+                  <option value="ET">Estonian</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finnish</option>
+                  <option value="FR">French</option>
+                  <option value="KA">Georgian</option>
+                  <option value="DE">German</option>
+                  <option value="EL">Greek</option>
+                  <option value="GU">Gujarati</option>
+                  <option value="HE">Hebrew</option>
+                  <option value="HI">Hindi</option>
+                  <option value="HU">Hungarian</option>
+                  <option value="IS">Icelandic</option>
+                  <option value="ID">Indonesian</option>
+                  <option value="GA">Irish</option>
+                  <option value="IT">Italian</option>
+                  <option value="JA">Japanese</option>
+                  <option value="JW">Javanese</option>
+                  <option value="KO">Korean</option>
+                  <option value="LA">Latin</option>
+                  <option value="LV">Latvian</option>
+                  <option value="LT">Lithuanian</option>
+                  <option value="MK">Macedonian</option>
+                  <option value="MS">Malay</option>
+                  <option value="ML">Malayalam</option>
+                  <option value="MT">Maltese</option>
+                  <option value="MI">Maori</option>
+                  <option value="MR">Marathi</option>
+                  <option value="MN">Mongolian</option>
+                  <option value="NE">Nepali</option>
+                  <option value="NO">Norwegian</option>
+                  <option value="FA">Persian</option>
+                  <option value="PL">Polish</option>
+                  <option value="PT">Portuguese</option>
+                  <option value="PA">Punjabi</option>
+                  <option value="QU">Quechua</option>
+                  <option value="RO">Romanian</option>
+                  <option value="RU">Russian</option>
+                  <option value="SM">Samoan</option>
+                  <option value="SR">Serbian</option>
+                  <option value="SK">Slovak</option>
+                  <option value="SL">Slovenian</option>
+                  <option value="ES">Spanish</option>
+                  <option value="SW">Swahili</option>
+                  <option value="SV">Swedish </option>
+                  <option value="TA">Tamil</option>
+                  <option value="TT">Tatar</option>
+                  <option value="TE">Telugu</option>
+                  <option value="TH">Thai</option>
+                  <option value="BO">Tibetan</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TR">Turkish</option>
+                  <option value="UK">Ukrainian</option>
+                  <option value="UR">Urdu</option>
+                  <option value="UZ">Uzbek</option>
+                  <option value="VI">Vietnamese</option>
+                  <option value="CY">Welsh</option>
+                  <option value="XH">Xhosa</option>
+
+                </select>
+              </div>
+
               <div class="row btn_wrapper">
                 <button class="btn btn_signin btn-primary btn-block text-uppercase" type="submit">Добавить</button>
               </div>
@@ -65,5 +163,44 @@
       </div>
     </div>
   </div>
+
+
+
+
+  <script>
+    const radio1 = document.querySelector('#exampleRadios1');
+    const radio2 = document.querySelector('#exampleRadios2');
+    const inputEmail = document.querySelector('#inputEmail');
+    const select1 = document.querySelector('#select');
+    const select2 = document.querySelector('#select2');
+
+    inputEmail.addEventListener('change', () => {
+      update();
+    })
+
+    radio1.addEventListener('change', () => {
+      update();
+    })
+
+    radio2.addEventListener('change', () => {
+      update();
+    })
+
+
+    const update = () => {
+      if (radio1.checked = true && inputEmail.value > 1) {
+        select1.style.display = "block";
+        select2.style.display = "none";
+      };
+      if (radio2.checked = true && inputEmail.value > 1) {
+        select1.style.display = "none";
+        select2.style.display = "block";
+      };
+    }
+
+
+  </script>
+
 </body>
+
 </html>

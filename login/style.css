@@ -145,3 +145,12 @@ body {
     color: #777;
   }
 }
+
+
+
+
+/* ADD PAGE */
+#select ,#select2 {
+  display: none;
+}
+/* / ADD PAGE*/
