@@ -203,7 +203,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   };
 
-
   // 2 tab chanels sort
   const tabChanelsSort = () => {
     const chanelsPopSortBtn = document.querySelector('.chanels_pop_sort');
@@ -227,9 +226,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   };
 
+  const inputResults = () => {
+
+    const inputSection = document.querySelector('.input__section');
+    const inputResults = document.querySelector('.input__results');
+    const input = document.querySelector('.input');
+    let isInputResultsOpen = false;
+
+    input.addEventListener('click', () => {
+      input.style.borderBottomLeftRadius = '0px';
+      input.style.borderBottomRightRadius = '0px';
+      input.style.borderBottom = '0px';
+      inputResults.style.display = 'block';
+      isInputResultsOpen = true;
+    });
+
+    // todo: закрытие
+    
+
+  }
+
   
 
   changeTheme();
+  inputResults(); // show/hide input results
   sortTopChanels(); // 1 tab top chanels sort
   sortTopChats(); // 1 tab top chats sort
   showHideCats(); //2 tab show/hide of chanels categories

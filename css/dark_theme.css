@@ -38,6 +38,11 @@ body {
   color: var(--white_clr);
 }
 
+.input__results .card__title,
+.input__results .card__btn {
+  color: #000;
+}
+
 .input__results::-webkit-scrollbar-thumb {
   border: 1px solid var(--black);
 }
