@@ -226,6 +226,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   };
 
+
+  // 1 tab 
   const inputResults = () => {
 
     const inputWrapper = document.querySelector('.input__wrapper');
