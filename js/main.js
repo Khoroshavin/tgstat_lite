@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const inputResults = () => {
 
-    const inputSection = document.querySelector('.input__section');
+    const inputWrapper = document.querySelector('.input__wrapper');
     const inputResults = document.querySelector('.input__results');
     const input = document.querySelector('.input');
     let isInputResultsOpen = false;
@@ -237,6 +237,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
       input.style.borderBottomLeftRadius = '0px';
       input.style.borderBottomRightRadius = '0px';
       input.style.borderBottom = '0px';
+      if (window.innerWidth <= 425) {
+        inputWrapper.style.width = "100%";
+        inputWrapper.style.margin = "0";
+      }
       inputResults.style.display = 'block';
       isInputResultsOpen = true;
     });
