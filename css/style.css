@@ -277,6 +277,9 @@ body {
     background-position: top 0px left 220px; 
     height: 98px;
   }
+  .logo_text {
+    display: none;
+  }
 }
 
 /* /header */
@@ -291,7 +294,6 @@ body {
 
 .input__label {
   font-size: 18px;
-  position: relative;
 }
 
 .input_form {
@@ -348,7 +350,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden; 
   display: none;
-  /* opacity: 0; */
 }
 
 .input__results::-webkit-scrollbar {
@@ -417,7 +418,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .input__label {
+    font-size: 16px;
+  }
+}
 
+@media only screen and (max-width: 425px) {
+  .input__label {
+    /* font-size: 14px; */
+  }
+}
 
 
 /* tabs */
@@ -498,7 +509,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  .tabs__wrapper {
+    padding-top: 72px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .tabs__wrapper {
+    padding-top: 52px;
+  }
   .tabs {
     width: 300px;
     margin: 0 auto;
@@ -543,9 +563,6 @@ body {
 }
 
 @media only screen and (max-width: 1400px) {
-  .one__panel {
-    /* margin-top: 44px; */
-  }
   .top__title{ 
     font-size: 36px;
     margin-bottom: 30px;
@@ -696,6 +713,40 @@ body {
   .panel .card__btn_top {
     display: none;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .tg__card {
+    margin-bottom: 60px;
+  }
+  .card__btn{
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card__followers {
+    padding-left: 29px;
+  }
+  
+  .card__login {
+    padding-left: 27px;
+  }
+  .card__login::before {
+    content: none;
+  }
+  .card__btn{
+    padding: 10px 28px;
+    font-size: 14px;
+  }
+  .card__desc {
+    margin-bottom: 1px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  
 }
 
 /* / CARD TG__CARD*/
