@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
       inputResults.style.display = 'block';
       isInputResultsOpen = true;
-      setTimeout(closeInputResults, 1);
+      // setTimeout(closeInputResults, 1);
     });
   }
 
@@ -252,14 +252,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
       document.addEventListener('click', function(event) {
         const inputResults = document.querySelector('.input__results');
         const input = document.querySelector('.input');
-        
-        if (!event.target.classList.contains('input_results' && isInputResultsOpen)) {
+
+        if (!event.target.classList.contains('input__results') 
+            && !event.target.classList.contains('input') 
+            && isInputResultsOpen
+            && !event.target.classList.contains('results__sum')
+            && !event.target.classList.contains('results__title')
+            && !event.target.classList.contains('chanels__results')
+            && !event.target.classList.contains('tg__card')
+            && !event.target.classList.contains('card__header_wrapper')
+            && !event.target.classList.contains('card__header')
+            && !event.target.classList.contains('img__wrapper')
+            && !event.target.classList.contains('card__img')
+            && !event.target.classList.contains('card__info')
+            && !event.target.classList.contains('card__title')
+            && !event.target.classList.contains('card__followers')
+            && !event.target.classList.contains('card__login')
+            && !event.target.classList.contains('card__btn')
+            // && !event.target.classList.contains('input')
+            ) {
+          console.log(event.target);
           inputResults.style.display='none';
           input.style.borderBottomLeftRadius = '30px';
           input.style.borderBottomRightRadius = '30px';
-          input.style.borderBottom = '1px';
+          input.style.borderBottom = '1px solid #9A9A9A';
           isInputResultsOpen = false;
         }
+
+        
+        // if (!event.target.classList.contains('input_results') && isInputResultsOpen != true ) {
+        //   inputResults.style.display='none';
+        //   input.style.borderBottomLeftRadius = '30px';
+        //   input.style.borderBottomRightRadius = '30px';
+        //   input.style.borderBottom = '1px';
+        //   isInputResultsOpen = false;
+        // }
       });
     }
 
@@ -267,6 +294,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   changeTheme();
   inputResults(); // show/hide input results
+  closeInputResults();
   sortTopChanels(); // 1 tab top chanels sort
   sortTopChats(); // 1 tab top chats sort
   showHideCats(); //2 tab show/hide of chanels categories

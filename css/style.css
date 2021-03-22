@@ -334,7 +334,10 @@ body {
   height: 62px;
   padding: 20px;
   font-size: 16px;
-  border: 1px solid var(--clr_gray);
+  border-top: 1px solid var(--clr_gray);
+  border-right: 1px solid var(--clr_gray);
+  border-bottom: 1px solid var(--clr_gray);
+  border-left: 1px solid var(--clr_gray);
   border-radius: 30px;
   background-color: #fff;
   position: relative;
@@ -344,14 +347,14 @@ body {
 }
 
 
-.input:focus ~ .input__results{
-  /* display: block; */
-}
-.input:focus {
-  /* border-bottom-left-radius: 0px;
+/* .input:focus ~ .input__results{
+  display: block;
+} */
+/* .input:focus {
+  border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-bottom: 0px; */
-}
+  border-bottom: 0px;
+} */
 
 .input::-webkit-search-cancel-button{
   display: none;  
