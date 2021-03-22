@@ -225,14 +225,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     });
   };
-
+  let isInputResultsOpen = false;
 
   // 1 tab 
   const inputResults = () => {
     const inputWrapper = document.querySelector('.input__wrapper');
     const inputResults = document.querySelector('.input__results');
     const input = document.querySelector('.input');
-    let isInputResultsOpen = false;
+
     input.addEventListener('click', () => {
       input.style.borderBottomLeftRadius = '0px';
       input.style.borderBottomRightRadius = '0px';
@@ -243,26 +243,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
       inputResults.style.display = 'block';
       isInputResultsOpen = true;
-      // setTimeout(closeInputResults, 1);
-      // closeInputResults();
+      setTimeout(closeInputResults, 1);
     });
   }
+
     // todo: закрытие
     const closeInputResults = () => {
       document.addEventListener('click', function(event) {
         const inputResults = document.querySelector('.input__results');
         const input = document.querySelector('.input');
         
-        if (!event.target.classList.contains('input_results')) {
+        if (!event.target.classList.contains('input_results' && isInputResultsOpen)) {
           inputResults.style.display='none';
           input.style.borderBottomLeftRadius = '30px';
           input.style.borderBottomRightRadius = '30px';
           input.style.borderBottom = '1px';
+          isInputResultsOpen = false;
         }
       });
     }
 
-  
+
 
   changeTheme();
   inputResults(); // show/hide input results
