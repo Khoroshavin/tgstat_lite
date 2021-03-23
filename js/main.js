@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
   let isInputResultsOpen = false;
 
-  // 1 tab 
+  // 1 tab result of search
   const inputResults = () => {
     const inputWrapper = document.querySelector('.input__wrapper');
     const inputResults = document.querySelector('.input__results');
@@ -237,66 +237,79 @@ document.addEventListener('DOMContentLoaded', (event) => {
       input.style.borderBottomLeftRadius = '0px';
       input.style.borderBottomRightRadius = '0px';
       input.style.borderBottom = '0px';
-      if (window.innerWidth <= 425) {
-        inputWrapper.style.width = "100%";
-        inputWrapper.style.margin = "0";
-      }
       inputResults.style.display = 'block';
       isInputResultsOpen = true;
-      // setTimeout(closeInputResults, 1);
     });
   }
 
-    // todo: закрытие
-    const closeInputResults = () => {
-      document.addEventListener('click', function(event) {
-        const inputResults = document.querySelector('.input__results');
-        const input = document.querySelector('.input');
+  // todo: закрытие
+  const closeInputResults = () => {
+    document.addEventListener('click', function(event) {
+      const inputResults = document.querySelector('.input__results');
+      const input = document.querySelector('.input');
 
-        if (!event.target.classList.contains('input__results') 
-            && !event.target.classList.contains('input') 
-            && isInputResultsOpen
-            && !event.target.classList.contains('results__sum')
-            && !event.target.classList.contains('results__title')
-            && !event.target.classList.contains('chanels__results')
-            && !event.target.classList.contains('tg__card')
-            && !event.target.classList.contains('card__header_wrapper')
-            && !event.target.classList.contains('card__header')
-            && !event.target.classList.contains('img__wrapper')
-            && !event.target.classList.contains('card__img')
-            && !event.target.classList.contains('card__info')
-            && !event.target.classList.contains('card__title')
-            && !event.target.classList.contains('card__followers')
-            && !event.target.classList.contains('card__login')
-            && !event.target.classList.contains('card__btn')
-            // && !event.target.classList.contains('input')
-            ) {
-          console.log(event.target);
-          inputResults.style.display='none';
-          input.style.borderBottomLeftRadius = '30px';
-          input.style.borderBottomRightRadius = '30px';
-          input.style.borderBottom = '1px solid #9A9A9A';
-          isInputResultsOpen = false;
-        }
+      if (!event.target.classList.contains('input__results') 
+          && !event.target.classList.contains('input') 
+          && isInputResultsOpen
+          && !event.target.classList.contains('results__sum')
+          && !event.target.classList.contains('results__title')
+          && !event.target.classList.contains('chanels__results')
+          && !event.target.classList.contains('tg__card')
+          && !event.target.classList.contains('card__header_wrapper')
+          && !event.target.classList.contains('card__header')
+          && !event.target.classList.contains('img__wrapper')
+          && !event.target.classList.contains('card__img')
+          && !event.target.classList.contains('card__info')
+          && !event.target.classList.contains('card__title')
+          && !event.target.classList.contains('card__followers')
+          && !event.target.classList.contains('card__login')
+          && !event.target.classList.contains('card__btn')
+          ) {
+        console.log(event.target);
+        inputResults.style.display='none';
+        input.style.borderBottomLeftRadius = '30px';
+        input.style.borderBottomRightRadius = '30px';
+        input.style.borderBottom = '1px solid #9A9A9A';
+        isInputResultsOpen = false;
+      }
 
-        
-        // if (!event.target.classList.contains('input_results') && isInputResultsOpen != true ) {
-        //   inputResults.style.display='none';
-        //   input.style.borderBottomLeftRadius = '30px';
-        //   input.style.borderBottomRightRadius = '30px';
-        //   input.style.borderBottom = '1px';
-        //   isInputResultsOpen = false;
-        // }
-      });
-    }
+    });
+  }
 
 
+  const moreBtn = () => {
 
-  changeTheme();
+    const tabWrap = document.querySelector('.tabs__wrapper');
+    const moreBtnChannels = document.querySelector('.more__btn_channels');
+    const moreBtnChats = document.querySelector('.more__btn_chats');
+    const tab2 = document.querySelector('#two');
+    const tab3 = document.querySelector('#three');
+
+    moreBtnChannels.addEventListener('click', () => {
+
+      tabWrap.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			});
+      tab2.checked = true;
+    })
+
+    moreBtnChats.addEventListener('click', () => {
+      tabWrap.scrollIntoView( {
+				behavior: 'smooth',
+				block: 'start',
+			});
+      tab3.checked = true;
+    })
+  }
+
+
+  changeTheme();  // change theme
   inputResults(); // show/hide input results
   closeInputResults();
   sortTopChanels(); // 1 tab top chanels sort
   sortTopChats(); // 1 tab top chats sort
+  moreBtn(); // change active tab
   showHideCats(); //2 tab show/hide of chanels categories
   showHideCats2(); //3 tab show/hide of chats categories
   choiceChanelsCategory(); // 2 tab choice chanels category

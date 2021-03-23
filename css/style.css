@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "Lucida Grande";
-  src: url("fonts/lucida-grande/lucida-grande.woff2"); 
-  src: url("fonts/lucida-grande/lucida-grande.woff2") format("woff2"),
-  url("fonts/lucida-grande/lucida-grande.woff2") format("woff2");
+  src: url("../fonts/lucida-grande/lucida-grande.woff2"); 
+  src: url("../fonts/lucida-grande/lucida-grande.woff2") format("woff2"),
+  url("../fonts/lucida-grande/lucida-grande.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
   font-display: swap;
@@ -11,9 +11,9 @@
 
 @font-face {
 	font-family: "Lucida Grande Bold"; 
-  src: url("fonts/lucida-grande-bold/lucida-grande-bold.woff2");
-  src: url("fonts/lucida-grande-bold/lucida-grande-bold.woff2") format("woff2"),
-  url("fonts/lucida-grande-bold/lucida-grande-bold.woff2") format("woff2");
+  src: url("../fonts/lucida-grande-bold/lucida-grande-bold.woff2");
+  src: url("../fonts/lucida-grande-bold/lucida-grande-bold.woff2") format("woff2"),
+  url("../fonts/lucida-grande-bold/lucida-grande-bold.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
   font-display: swap;
@@ -40,6 +40,7 @@ html {
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -72,6 +73,18 @@ select {
   border: 0;
   cursor: pointer;
   background-color: transparent;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
 }
 
 
@@ -633,9 +646,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .tops {
-    /* margin-top: 45px; */
+@media only screen and (max-width: 425px) {
+  .top__title {
+    font-size: 32px;
   }
 }
 
@@ -891,6 +904,7 @@ body {
 .select__category {
   max-width: 300px;
   margin: 0 auto;
+  position: relative;
 }
 
 .select__chanels, .select__chats {
@@ -905,8 +919,22 @@ body {
   border: 1px solid var(--clr_gray);
   border-radius: 10px;
   font-size: 16px;
-  /* font-weight: 700; */
 }
+
+.select__category::after{
+  position: absolute;
+  content:url(../img/icons/triangle_black.svg);
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  right: 20px;
+  transition: .4s
+}
+
+.select__chanels:focus ~ .select__category::after{
+  transform: rotate(-90deg);
+}
+
 .select__chanels option,
 .select__chats option {
   display: -webkit-box;
@@ -966,3 +994,30 @@ body {
     width: fit-content; 
   }
 }
+
+
+ /* MORE BUTTONS */
+.more__btn {
+  margin: 0 auto;
+  display: block;
+  max-width: 354px;
+  font-size: 18px;
+  border: 1px solid #707070;
+  border-radius: 100px;
+  padding: 28px 50px;
+  margin-bottom: 40px;
+}
+
+.more__btn::after {
+  content: url(../img/icons/triangle_to.svg);
+  padding-left: 12px;
+}
+
+@media only screen and (max-width: 425px) {
+  .more__btn {
+    font-size: 16px;
+    padding: 18px;
+  }
+}
+
+ /* / MORE BUTTONS*/

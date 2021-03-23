@@ -8,12 +8,6 @@ body {
   background-color: #F5F9FC;
 }
 
-.theme__btn .planet {
-  /* width: 30px;
-  height: 30px; */
-}
-
-
 /* input*/
 .input {
 
@@ -35,5 +29,9 @@ body {
 }
 
 .select__chanels, .select__chats {
+  background-color: #fff;
+}
+
+.more__btn {
   background-color: #fff;
 }
