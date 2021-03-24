@@ -256,13 +256,13 @@ body {
   height: 10px;
 }
 
-.planet_light {
+/* .planet_light {
   background: url(../img/icons/sun_dark.svg) no-repeat;
 }
 
 .planet_dark {
   background: url(../img/icons/sun_light.svg) no-repeat;
-}
+} */
 
 .triangle_light {
   background: url(../img/icons/triangle_black.svg) no-repeat;
@@ -272,13 +272,13 @@ body {
   background: url(../img/icons/triangle_white.svg) no-repeat;
 }
 
-.change_planet_light {
+/* .change_planet_light {
   background: url(../img/icons/moon_dark.svg) no-repeat;
 }
 
 .change_planet_dark {
   background: url(../img/icons/moon_white.svg) no-repeat;
-}
+} */
 
 
 @media only screen and (max-width: 1600px) {

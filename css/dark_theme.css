@@ -14,12 +14,13 @@ body {
   color: var(--white_clr);
 }
 
-
-
-.detail_fake {
-  background-color: var(--black);
+.planet_dark {
+  background: url(../img/icons/moon_white.svg) no-repeat;
 }
 
+.change_planet_dark {
+  background: url(../img/icons/sun_light.svg) no-repeat;
+}
 
 /* tabs */
 .tab {

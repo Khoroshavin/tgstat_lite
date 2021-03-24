@@ -8,9 +8,12 @@ body {
   background-color: #F5F9FC;
 }
 
-/* input*/
-.input {
+.planet_light {
+  background: url(../img/icons/sun_dark.svg) no-repeat;
+}
 
+.change_planet_light {
+  background: url(../img/icons/moon_dark.svg) no-repeat;
 }
 
 .input__results::-webkit-scrollbar-thumb {
